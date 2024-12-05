@@ -14,19 +14,21 @@ theme:
     - content.code.annotation
     - content.code.copy
   language: en
+
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
+    - scheme: slate  # Set dark mode as default (slate is a dark theme)
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
+        name: Switch to light mode
+      primary: "#003366" 
       accent: lime
+
+    - scheme: default  # This is the light mode scheme, for toggling
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
 
 
 markdown_extensions:
